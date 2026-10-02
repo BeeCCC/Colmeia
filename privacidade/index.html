@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PÁGINA CANDIDATA v1.0 — NÃO PUBLICADA. Aguarda QA do ChatGPT e aprovação da Bruna. -->
+    <title>Aviso de Privacidade | Bruna Catarina · BeeC</title>
+    <meta name="description" content="Como a BCB Educacional / BeeC trata os dados informados na Lista de Interesse da Mentoria Integral BeeC e como exercer seus direitos.">
+    <link rel="canonical" href="https://colmeia-bruna-19c1.vercel.app/privacidade">
+
+    <link rel="preload" href="/fonts/spectral-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/karla-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Google Analytics (mesmo ID da home) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9K2Y7Q4WZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-R9K2Y7Q4WZ');
+    </script>
+
+    <style>
+        /* Fontes da MIV BeeC v2.1, hospedadas no próprio site (licença OFL, ver /fonts/OFL-LICENSE.txt) */
+        @font-face { font-family: 'Spectral'; font-style: normal; font-weight: 500; font-display: swap; src: url('/fonts/spectral-latin-500-normal.woff2') format('woff2'); }
+        @font-face { font-family: 'Karla'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/karla-latin-400-normal.woff2') format('woff2'); }
+        @font-face { font-family: 'Karla'; font-style: normal; font-weight: 700; font-display: swap; src: url('/fonts/karla-latin-700-normal.woff2') format('woff2'); }
+        @font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-weight: 500; font-display: swap; src: url('/fonts/ibm-plex-mono-latin-500-normal.woff2') format('woff2'); }
+
+        /* MIV BeeC v2.1 — tokens oficiais, sem paleta exclusiva */
+        :root {
+            --marinho: #132037;
+            --marinho-profundo: #0B1024;
+            --dourado: #D39C47;
+            --dourado-claro: #F0DFA8;
+            --creme: #F8F4E8;
+            --rosa: #E8A0BF;
+            --texto-escuro: #1E2438;
+            --texto-sobre-escuro: rgba(248, 244, 232, 0.86);
+            --serif: 'Spectral', Georgia, 'Times New Roman', serif;
+            --sans: 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        @media (prefers-reduced-motion: no-preference) {
+            html { scroll-behavior: smooth; }
+        }
+
+        body {
+            font-family: var(--sans);
+            font-size: 17px;
+            line-height: 1.6;
+            background: var(--marinho);
+            color: var(--texto-sobre-escuro);
+            overflow-x: hidden;
+        }
+
+        img { max-width: 100%; display: block; }
+
+        a { color: var(--dourado); text-decoration: none; }
+
+        :focus-visible { outline: 2px solid var(--dourado-claro); outline-offset: 3px; border-radius: 4px; }
+        main :focus-visible { outline-color: var(--marinho); }
+
+        .container { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+        h1, h2 { font-family: var(--serif); font-weight: 500; line-height: 1.2; color: var(--marinho); text-wrap: balance; }
+        h1 { font-size: 34px; letter-spacing: -0.3px; }
+        h2 { font-size: 22px; margin-bottom: 10px; }
+        p + p { margin-top: 12px; }
+
+        header { padding: 18px 20px 14px; background: var(--marinho); }
+        .logo { display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .logo-image { width: 40px; height: 40px; }
+        .logo-text { font-size: 16px; font-weight: 700; color: var(--creme); }
+
+        main { background: var(--creme); color: var(--texto-escuro); padding: 56px 0 72px; }
+        .etiqueta { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--texto-escuro); margin-bottom: 14px; display: inline-flex; align-items: center; gap: 10px; }
+        .etiqueta::before { content: ''; width: 22px; height: 1px; background: var(--dourado); }
+        .intro { font-size: 18px; margin-top: 16px; }
+        .versao { font-family: var(--mono); font-size: 13px; font-weight: 500; letter-spacing: 0.04em; margin-top: 16px; padding-bottom: 24px; border-bottom: 1px solid rgba(30, 36, 56, 0.15); }
+        .bloco { padding: 26px 0; border-bottom: 1px solid rgba(30, 36, 56, 0.15); }
+        .bloco:last-of-type { border-bottom: 0; }
+        .num { font-family: var(--mono); font-size: 13px; font-weight: 500; color: var(--texto-escuro); display: block; margin-bottom: 6px; }
+        .lista { list-style: none; display: grid; gap: 6px; margin-top: 10px; }
+        .lista li { padding-left: 20px; position: relative; }
+        .lista li::before { content: '—'; position: absolute; left: 0; color: var(--dourado); }
+        .nota { font-size: 15px; margin-top: 12px; }
+        .canal { margin-top: 16px; padding: 18px 20px; border: 1px solid rgba(19, 32, 55, 0.2); border-left: 3px solid var(--dourado); border-radius: 10px; background: rgba(240, 223, 168, 0.22); }
+        .canal strong { font-weight: 700; }
+        .assunto { font-family: var(--mono); font-weight: 500; font-size: 15px; background: var(--creme); border: 1px solid rgba(19, 32, 55, 0.25); border-radius: 6px; padding: 2px 8px; white-space: nowrap; }
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; margin-top: 16px; padding: 14px 26px; border: 2px solid var(--marinho); border-radius: 50px; background: var(--marinho); color: var(--creme); font-family: var(--sans); font-size: 15px; font-weight: 700; text-align: center; transition: background-color 0.2s ease, color 0.2s ease; }
+        .btn:hover { background: transparent; color: var(--marinho); }
+        .btn-arrow::after { content: '→'; }
+        main a:not(.btn) { color: var(--marinho); text-decoration: underline; text-underline-offset: 3px; }
+
+        footer { background: var(--marinho-profundo); text-align: center; padding: 36px 20px; font-size: 13px; color: var(--texto-sobre-escuro); }
+        .footer-links a { display: inline-block; padding: 12px 8px; color: var(--dourado-claro); }
+
+        @media (min-width: 768px) {
+            body { font-size: 18px; }
+            main { padding: 88px 0 112px; }
+            h1 { font-size: 46px; }
+            h2 { font-size: 26px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo" aria-label="Bruna Catarina — página inicial">
+            <img src="/images/logo.png" alt="" class="logo-image" width="40" height="40">
+            <span class="logo-text">Bruna Catarina</span>
+        </a>
+    </header>
+
+    <main>
+        <div class="container">
+            <p class="etiqueta">Privacidade</p>
+            <h1>Aviso de Privacidade</h1>
+            <p class="intro">Como a BCB Educacional / BeeC trata os dados que você informa na Lista de Interesse da Mentoria Integral BeeC — e como exercer seus direitos.</p>
+            <p class="versao">Versão 1.0 · Atualizado em 2 de outubro de 2026</p>
+
+            <section class="bloco" aria-labelledby="s1">
+                <span class="num">01</span>
+                <h2 id="s1">Quem trata os dados</h2>
+                <p>BCB Educacional / BeeC, representada por Bruna Catarina.</p>
+            </section>
+
+            <section class="bloco" aria-labelledby="s2">
+                <span class="num">02</span>
+                <h2 id="s2">Quais dados são coletados</h2>
+                <p>Os dados que você informa na Lista de Interesse da Mentoria Integral BeeC:</p>
+                <ul class="lista">
+                    <li>nome completo e e-mail;</li>
+                    <li>WhatsApp com DDD, se você quiser informar;</li>
+                    <li>há quanto tempo está no mercado;</li>
+                    <li>a dimensão em que sente que mais precisa evoluir;</li>
+                    <li>seu maior desafio e seu principal objetivo para os próximos 6 a 12 meses;</li>
+                    <li>se você registra suas operações, se quiser informar;</li>
+                    <li>o registro do seu consentimento e a data e hora do envio.</li>
+                </ul>
+            </section>
+
+            <section class="bloco" aria-labelledby="s3">
+                <span class="num">03</span>
+                <h2 id="s3">Para que os dados são usados</h2>
+                <p>Para registrar seu interesse, compreender o contexto inicial do seu momento no mercado e entrar em contato com você sobre a Mentoria Integral BeeC.</p>
+            </section>
+
+            <section class="bloco" aria-labelledby="s4">
+                <span class="num">04</span>
+                <h2 id="s4">Onde os dados são processados e armazenados</h2>
+                <p>No Google Forms, na planilha do Google vinculada ao formulário e nas ferramentas necessárias ao contato com você, como WhatsApp e e-mail.</p>
+            </section>
+
+            <section class="bloco" aria-labelledby="s5">
+                <span class="num">05</span>
+                <h2 id="s5">Compartilhamento</h2>
+                <p>Os dados são acessados apenas pelos provedores necessários à operação — as ferramentas citadas acima. Provedores utilizados pela BeeC, como Google e WhatsApp, podem processar dados fora do Brasil.</p>
+            </section>
+
+            <section class="bloco" aria-labelledby="s6">
+                <span class="num">06</span>
+                <h2 id="s6">Por quanto tempo os dados são mantidos</h2>
+                <p>Os dados são mantidos enquanto forem necessários para as finalidades informadas neste aviso e para o cumprimento das demais obrigações aplicáveis, com revisão periódica.</p>
+            </section>
+
+            <section class="bloco" aria-labelledby="s7">
+                <span class="num">07</span>
+                <h2 id="s7">Seus direitos</h2>
+                <p>Você pode pedir:</p>
+                <ul class="lista">
+                    <li>a confirmação de que tratamos seus dados;</li>
+                    <li>o acesso aos seus dados;</li>
+                    <li>a correção de dados incompletos, inexatos ou desatualizados;</li>
+                    <li>a revogação do seu consentimento;</li>
+                    <li>a eliminação dos seus dados, quando aplicável;</li>
+                    <li>informações sobre o tratamento, incluindo com quem os dados são compartilhados.</li>
+                </ul>
+                <p class="nota">A revogação do consentimento vale para tratamentos futuros. Os tratamentos realizados legitimamente antes dela não são automaticamente anulados. Alguns dados podem ser mantidos nas hipóteses previstas na Lei Geral de Proteção de Dados (Lei nº 13.709/2018); por isso, a eliminação ocorre quando aplicável.</p>
+            </section>
+
+            <section class="bloco" aria-labelledby="s8">
+                <span class="num">08</span>
+                <h2 id="s8">Como exercer seus direitos</h2>
+                <div class="canal">
+                    <p>Envie uma mensagem para o <strong>WhatsApp oficial</strong> da Bruna Catarina / BeeC e comece a mensagem com:</p>
+                    <p><span class="assunto">Privacidade / Dados Pessoais</span></p>
+                    <a href="https://wa.me/5511975828778?text=Privacidade%20%2F%20Dados%20Pessoais" class="btn btn-arrow" target="_blank" rel="noopener">Abrir o WhatsApp oficial</a>
+                </div>
+            </section>
+
+            <section class="bloco" aria-labelledby="s9">
+                <span class="num">09</span>
+                <h2 id="s9">Navegação neste site</h2>
+                <p>As páginas deste site usam o Google Analytics, serviço do Google, para medir acessos às páginas e cliques em botões. Esse serviço pode usar cookies e identificadores no seu navegador.</p>
+            </section>
+
+            <section class="bloco" aria-labelledby="s10">
+                <span class="num">10</span>
+                <h2 id="s10">Atualizações deste aviso</h2>
+                <p>Este aviso pode ser atualizado. A versão e a data da última atualização ficam sempre no início desta página.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bruna Catarina BeeC. Todos os direitos reservados.</p>
+        <p class="footer-links"><a href="/mercado-financeiro">Mentoria Integral BeeC</a> · <a href="/">Página inicial</a></p>
+    </footer>
+</body>
+</html>

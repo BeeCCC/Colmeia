@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoria Integral BeeC | Bruna Catarina · Mercado Financeiro</title>
+    <meta name="description" content="Mercado é técnico. Decisão é humana. Mentoria em mercado financeiro com técnica, mente, princípios e evidência. Sem sinais, sem promessa.">
+    <link rel="canonical" href="https://colmeia-bruna-19c1.vercel.app/mercado-financeiro">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mentoria Integral BeeC | Bruna Catarina · Mercado Financeiro">
+    <meta property="og:description" content="Mercado é técnico. Decisão é humana. Mentoria em mercado financeiro com técnica, mente, princípios e evidência. Sem sinais, sem promessa.">
+    <meta property="og:url" content="https://colmeia-bruna-19c1.vercel.app/mercado-financeiro">
+    <!-- OG FINAL CANDIDATA v0.7: /images/og-mercado-financeiro.jpg (JPEG 1200×630, og:image principal). Só vale em produção depois do QA visual e da aprovação da Bruna. -->
+    <meta property="og:image" content="https://colmeia-bruna-19c1.vercel.app/images/og-mercado-financeiro.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Bruna Catarina e a frase: Mercado é técnico. Decisão é humana. Evolução é integral. Mentoria Integral BeeC. Bruna Catarina · BeeC.">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mentoria Integral BeeC | Bruna Catarina · Mercado Financeiro">
+    <meta name="twitter:description" content="Mercado é técnico. Decisão é humana. Mentoria em mercado financeiro com técnica, mente, princípios e evidência. Sem sinais, sem promessa.">
+    <meta name="twitter:image" content="https://colmeia-bruna-19c1.vercel.app/images/og-mercado-financeiro.jpg">
+
+    <link rel="preload" href="/fonts/spectral-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/karla-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Google Analytics (mesmo ID da home) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9K2Y7Q4WZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-R9K2Y7Q4WZ');
+    </script>
+
+    <style>
+        /* Fontes da MIV BeeC v2.1, hospedadas no próprio site (licença OFL, ver /fonts/OFL-LICENSE.txt) */
+        /* v0.3: conjunto reduzido de 4 arquivos (antes 9) — Spectral 500, Karla 400/700, IBM Plex Mono 500 */
+        @font-face { font-family: 'Spectral'; font-style: normal; font-weight: 500; font-display: swap; src: url('/fonts/spectral-latin-500-normal.woff2') format('woff2'); }
+        @font-face { font-family: 'Karla'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/karla-latin-400-normal.woff2') format('woff2'); }
+        @font-face { font-family: 'Karla'; font-style: normal; font-weight: 700; font-display: swap; src: url('/fonts/karla-latin-700-normal.woff2') format('woff2'); }
+        @font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-weight: 500; font-display: swap; src: url('/fonts/ibm-plex-mono-latin-500-normal.woff2') format('woff2'); }
+
+        /* MIV BeeC v2.1 — tokens oficiais, sem paleta exclusiva */
+        :root {
+            --marinho: #132037;
+            --marinho-profundo: #0B1024;
+            --dourado: #D39C47;
+            --dourado-claro: #F0DFA8;
+            --creme: #F8F4E8;
+            --rosa: #E8A0BF;
+            --texto-escuro: #1E2438;
+            --texto-sobre-escuro: rgba(248, 244, 232, 0.86);
+            --serif: 'Spectral', Georgia, 'Times New Roman', serif;
+            /* regra v0.3: Spectral sempre 500; IBM Plex Mono sempre 500 */
+            --sans: 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            --mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        @media (prefers-reduced-motion: no-preference) {
+            html { scroll-behavior: smooth; }
+        }
+
+        body {
+            font-family: var(--sans);
+            font-size: 17px;
+            line-height: 1.6;
+            background: var(--marinho);
+            color: var(--texto-sobre-escuro);
+            overflow-x: hidden;
+        }
+
+        img { max-width: 100%; display: block; }
+
+        a { color: var(--dourado); text-decoration: none; }
+
+        :focus-visible { outline: 2px solid var(--dourado-claro); outline-offset: 3px; border-radius: 4px; }
+        .claro :focus-visible { outline-color: var(--marinho); }
+
+        .container { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+        .container-wide { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+        section { padding: 72px 0; scroll-margin-top: 16px; }
+        section.sem-topo { padding-top: 0; }
+        .bloco-interno { max-width: 720px; }
+        .escuro { background: var(--marinho); color: var(--texto-sobre-escuro); }
+        .evidencia { background: var(--marinho-profundo); color: var(--texto-sobre-escuro); }
+        .claro { background: var(--creme); color: var(--texto-escuro); }
+
+        h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.2; text-wrap: balance; }
+        .escuro h1, .escuro h2, .evidencia h2, .evidencia h3, .escuro h3 { color: var(--creme); }
+        .claro h2, .claro h3 { color: var(--marinho); }
+
+        h1 { font-size: 34px; letter-spacing: -0.3px; }
+        h2 { font-size: 26px; margin-bottom: 18px; }
+        p + p { margin-top: 14px; }
+
+        /* Etiqueta de seção (IBM Plex Mono) */
+        .etiqueta {
+            font-family: var(--mono);
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .escuro .etiqueta, .evidencia .etiqueta { color: var(--dourado); }
+        .claro .etiqueta { color: var(--texto-escuro); }
+        .claro .etiqueta::before { content: ''; width: 22px; height: 1px; background: var(--dourado); }
+        .ponto-luz { width: 6px; height: 6px; border-radius: 50%; background: var(--rosa); display: inline-block; flex-shrink: 0; margin-top: 0.55em; }
+        .etiqueta:has(.ponto-luz) { align-items: flex-start; }
+
+        /* Cabeçalho (reaproveitado da home: .logo, .logo-image, .logo-text) */
+        header { padding: 18px 20px 14px; background: var(--marinho); }
+        .logo { display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .logo-image { width: 40px; height: 40px; }
+        .logo-text { font-size: 16px; font-weight: 700; color: var(--creme); }
+
+        /* Botões (reaproveitados da home: .btn, .btn-primary-fill, .btn-outline-full, .btn-arrow) */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 14px 26px;
+            border: 2px solid var(--dourado-claro);
+            border-radius: 50px;
+            background: transparent;
+            color: var(--creme);
+            font-family: var(--sans);
+            font-size: 15px;
+            font-weight: 700;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+        }
+        .btn:hover { background: var(--dourado-claro); color: var(--marinho-profundo); }
+        .btn-primary-fill { background: var(--dourado); border-color: var(--dourado); color: var(--marinho-profundo); width: 100%; }
+        .btn-primary-fill:hover { background: var(--dourado-claro); border-color: var(--dourado-claro); color: var(--marinho-profundo); }
+        .btn-outline-full { width: 100%; }
+        .btn-arrow::after { content: '→'; }
+        .claro .btn { border-color: var(--marinho); color: var(--marinho); }
+        .claro .btn:hover { background: var(--marinho); color: var(--creme); }
+        .link-seguinte { font-family: var(--mono); font-size: 13px; font-weight: 500; letter-spacing: 0.06em; color: var(--dourado-claro); display: inline-block; margin-top: 16px; padding: 12px 0; }
+        .link-seguinte:hover { color: var(--creme); }
+
+        /* Bloco 1 — Hero (reaproveitado: .hero-section, .hero-flex, .hero-photo-frame) */
+        .hero-section { position: relative; overflow: hidden; padding: 24px 0 72px; }
+        .hero-hive { display: none; position: absolute; width: 200px; height: 200px; right: -40px; top: -30px; opacity: 0.22; pointer-events: none; }
+        .hero-hive g { fill: none; stroke: var(--dourado); stroke-width: 1.2; }
+        .hero-flex { position: relative; display: flex; flex-direction: column; gap: 22px; }
+        .hero-text { display: flex; flex-direction: column; gap: 18px; }
+        .hero-sub { font-size: 17px; max-width: 34em; }
+        .hero-ctas { display: flex; flex-direction: column; gap: 12px; margin-top: 6px; }
+        .hero-apoio { font-size: 14px; opacity: 0.8; }
+        .hero-photo-frame {
+            width: 220px;
+            aspect-ratio: 2 / 3;
+            margin: 6px auto 0;
+            border-radius: 18px;
+            overflow: hidden;
+            background: var(--marinho-profundo);
+            box-shadow: 0 0 0 1px rgba(211, 156, 71, 0.35);
+            flex-shrink: 0;
+        }
+        .hero-photo-frame img, .profile-photo img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+        .h1-linha { display: block; }
+
+        /* Bloco 2 — Mentoria Integral */
+        .citacao-grande { font-family: var(--serif); font-weight: 500; font-size: 26px; line-height: 1.25; color: var(--marinho); margin-bottom: 24px; }
+        .nota-rodape-bloco { margin-top: 24px; font-size: 15px; padding-top: 16px; border-top: 1px solid rgba(30, 36, 56, 0.15); }
+
+        /* Bloco 3 — Quatro dimensões (reaproveitado: .course-card, .course-label, .course-title, .course-description) */
+        .dimensoes-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 28px; }
+        .course-card { background: rgba(240, 223, 168, 0.22); border: 1px solid rgba(19, 32, 55, 0.14); border-top: 3px solid var(--dourado); border-radius: 12px; padding: 24px; display: flex; flex-direction: column; }
+        .course-label { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--texto-escuro); margin-bottom: 10px; }
+        .course-title { font-family: var(--serif); font-size: 21px; font-weight: 500; color: var(--marinho); margin-bottom: 8px; }
+        .course-description { font-size: 16px; color: var(--texto-escuro); }
+        .fecho-bloco { margin-top: 28px; font-family: var(--serif); font-weight: 500; font-size: 20px; color: var(--marinho); }
+
+        /* Bloco 4 — VAR do Trade */
+        .ficha-var { list-style: none; counter-reset: var; margin: 28px 0; border: 1px solid rgba(240, 223, 168, 0.35); border-radius: 12px; }
+        .ficha-var li { counter-increment: var; display: flex; gap: 16px; align-items: baseline; padding: 18px 20px; border-bottom: 1px solid rgba(240, 223, 168, 0.18); font-size: 18px; color: var(--creme); }
+        .ficha-var li:last-child { border-bottom: 0; }
+        .ficha-var li::before { content: counter(var, decimal-leading-zero); font-family: var(--mono); font-size: 13px; font-weight: 500; color: var(--dourado); min-width: 24px; }
+        .frases-marca { display: grid; gap: 18px; margin: 32px 0; }
+        .frase-marca { font-family: var(--serif); font-weight: 500; font-size: 22px; line-height: 1.3; color: var(--creme); padding-left: 18px; border-left: 2px solid var(--dourado); }
+        .aviso { border: 1px solid rgba(240, 223, 168, 0.5); border-radius: 12px; padding: 18px 20px; font-size: 15px; }
+        .aviso strong { color: var(--dourado-claro); font-weight: 700; }
+
+        /* Bloco 5 — Júri Pós-Trade BeeC */
+        .fluxo-juri { list-style: none; margin: 32px 0; position: relative; display: grid; gap: 0; }
+        .fluxo-juri li { position: relative; padding: 0 0 26px 40px; }
+        .fluxo-juri li::before { content: ''; position: absolute; left: 7px; top: 6px; width: 12px; height: 12px; border: 2px solid var(--dourado); border-radius: 50%; background: var(--marinho-profundo); z-index: 1; }
+        .fluxo-juri li::after { content: ''; position: absolute; left: 13px; top: 20px; bottom: 0; width: 1px; background: rgba(211, 156, 71, 0.45); }
+        .fluxo-juri li:last-child::after { display: none; }
+        .passo-nome { font-family: var(--mono); font-size: 13px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dourado); display: block; margin-bottom: 4px; }
+        .passo-texto { font-size: 16px; }
+        .selos { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 10px; list-style: none; }
+        .selos li { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dourado-claro); border: 1px solid rgba(240, 223, 168, 0.45); border-radius: 50px; padding: 6px 12px; }
+        .subtitulo-bloco { font-family: var(--serif); font-weight: 500; font-size: 20px; color: var(--creme); margin: 36px 0 10px; }
+        .lista-traco { list-style: none; display: grid; gap: 8px; }
+        .lista-traco li { padding-left: 20px; position: relative; }
+        .lista-traco li::before { content: '—'; position: absolute; left: 0; color: var(--dourado); }
+        .governanca { margin-top: 32px; padding-top: 20px; border-top: 1px solid rgba(240, 223, 168, 0.2); font-size: 15px; }
+        .fecho-juri { margin-top: 24px; font-family: var(--serif); font-weight: 500; font-size: 24px; color: var(--creme); }
+
+        /* Bloco 6 — IA */
+        .subtitulo-ia { font-size: 18px; color: var(--texto-escuro); margin-bottom: 22px; }
+        .lista-ia { list-style: none; display: grid; gap: 10px; margin: 18px 0 26px; }
+        .lista-ia li { padding: 12px 16px; background: rgba(240, 223, 168, 0.22); border: 1px solid rgba(19, 32, 55, 0.14); border-radius: 10px; }
+
+        /* Bloco 7 — Papel da Bruna (reaproveitado: .about-grid, .profile-photo, .quote) */
+        .about-grid { display: flex; flex-direction: column; gap: 28px; }
+        .profile-photo { width: 180px; aspect-ratio: 2 / 3; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 0 0 1px rgba(211, 156, 71, 0.35); flex-shrink: 0; }
+        .verbos { display: grid; gap: 14px; margin: 22px 0; }
+        .verbos dt { font-family: var(--serif); font-weight: 500; font-size: 20px; color: var(--creme); }
+        .verbos dd { font-size: 16px; }
+        .apresentacao { font-size: 16px; }
+        .quote { border-left: 3px solid var(--dourado); padding-left: 18px; font-family: var(--serif); font-weight: 500; font-style: normal; font-size: 19px; color: var(--dourado-claro); margin: 22px 0 0; }
+        .principio { margin-top: 18px; font-family: var(--mono); font-size: 13px; font-weight: 500; letter-spacing: 0.06em; color: var(--dourado); }
+
+        /* Bloco 8 — Provas */
+        .lista-provas { list-style: none; display: grid; gap: 0; margin-top: 24px; }
+        .lista-provas li { padding: 16px 0; border-bottom: 1px solid rgba(30, 36, 56, 0.15); }
+        .lista-provas li:first-child { border-top: 1px solid rgba(30, 36, 56, 0.15); }
+        .prova-tipo { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--texto-escuro); opacity: 0.75; display: block; margin-bottom: 4px; }
+
+        /* Bloco 9 — Conversa (reaproveitado: .cta-section, .community-section) */
+        .cta-section { text-align: center; }
+        .cta-section .btn-primary-fill { width: 100%; }
+        .cta-texto { margin: 0 auto 28px; max-width: 34em; }
+        .cta-botoes { display: flex; flex-direction: column; gap: 12px; align-items: stretch; }
+        .cta-botoes .btn { width: 100%; }
+        .community-section { margin-top: 44px; border: 1px solid rgba(240, 223, 168, 0.3); border-radius: 12px; padding: 28px 22px; text-align: center; }
+        .community-section h3 { font-size: 22px; margin-bottom: 10px; }
+        .community-description { font-size: 15px; margin-bottom: 22px; }
+
+        /* Rodapé (reaproveitado: .footer-disclaimer) */
+        footer { background: var(--marinho-profundo); text-align: center; padding: 36px 20px; font-size: 13px; color: var(--texto-sobre-escuro); }
+        .footer-disclaimer { max-width: 640px; margin: 0 auto 16px; font-size: 12px; line-height: 1.7; opacity: 0.85; }
+        .footer-home { display: inline-block; margin-top: 4px; padding: 12px 0; color: var(--dourado-claro); }
+
+        @media (min-width: 480px) {
+            .btn-primary-fill, .btn-outline-full, .cta-section .btn-primary-fill, .cta-botoes .btn { width: auto; }
+            .cta-botoes { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+            .hero-ctas { flex-direction: row; flex-wrap: wrap; }
+        }
+
+        @media (min-width: 768px) {
+            section { padding: 112px 0; }
+            section.sem-topo { padding-top: 0; }
+            body { font-size: 18px; }
+            h1 { font-size: 46px; }
+            h2 { font-size: 34px; }
+            .hero-section { padding: 40px 0 112px; }
+            .hero-hive { display: block; }
+            .hero-flex { flex-direction: row; align-items: center; gap: 56px; }
+            .hero-text { flex: 1 1 auto; }
+            .hero-photo-frame { width: 280px; margin: 0; }
+            .citacao-grande { font-size: 32px; }
+            .dimensoes-grid { grid-template-columns: 1fr 1fr; }
+            .fluxo-juri { grid-template-columns: repeat(5, 1fr); gap: 16px; }
+            .fluxo-juri li { padding: 34px 0 0 0; }
+            .fluxo-juri li::before { left: 0; top: 0; }
+            .fluxo-juri li::after { left: 20px; right: -16px; top: 7px; bottom: auto; width: auto; height: 1px; }
+            .about-grid { display: grid; grid-template-columns: 220px 1fr; gap: 48px; align-items: start; }
+            .profile-photo { width: 220px; margin: 0; }
+            .frase-marca { font-size: 26px; }
+        }
+
+        @media (min-width: 1000px) {
+            h1 { font-size: 54px; }
+            .dimensoes-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo" aria-label="Bruna Catarina — página inicial">
+            <img src="/images/logo.png" alt="" class="logo-image" width="40" height="40">
+            <span class="logo-text">Bruna Catarina</span>
+        </a>
+    </header>
+
+    <main>
+        <!-- Bloco 1 — Hero -->
+        <section class="escuro hero-section" id="topo">
+            <svg class="hero-hive" viewBox="-60 -60 240 240" aria-hidden="true"><g>
+                <polygon points="-15.0,-42.5 8.8,-28.8 8.8,-1.3 -15.0,12.5 -38.8,-1.3 -38.8,-28.8"/>
+                <polygon points="11.0,2.5 34.8,16.2 34.8,43.8 11.0,57.5 -12.8,43.8 -12.8,16.2"/>
+                <polygon points="37.0,-42.5 60.8,-28.8 60.8,-1.3 37.0,12.5 13.1,-1.3 13.1,-28.8"/>
+                <polygon points="62.9,2.5 86.8,16.2 86.8,43.8 62.9,57.5 39.1,43.8 39.1,16.2"/>
+                <polygon points="37.0,47.5 60.8,61.2 60.8,88.8 37.0,102.5 13.1,88.8 13.1,61.2"/>
+            </g></svg>
+            <div class="container-wide">
+                <div class="hero-flex">
+                    <div class="hero-text">
+                        <p class="etiqueta"><span class="ponto-luz" aria-hidden="true"></span>Mentoria Integral BeeC · Mercado Financeiro</p>
+                        <h1><span class="h1-linha">Mercado é técnico.</span> <span class="h1-linha">Decisão é humana.</span> <span class="h1-linha">Evolução é integral.</span></h1>
+                        <p class="hero-sub">Técnica, mente, princípios e evidência trabalhando juntas para formar decisões melhores — com mentoria humana, dados e IA ampliando o que conseguimos enxergar.</p>
+                        <div class="hero-ctas">
+                            <a href="#mentoria" class="btn btn-primary-fill">Conheça a Mentoria Integral BeeC</a>
+                            <a href="#var" class="btn btn-outline-full">Veja como funciona o VAR do Trade</a>
+                        </div>
+                        <p class="hero-apoio">Educação e acompanhamento. Sem sala de sinais e sem promessa de resultado.</p>
+                    </div>
+                    <div class="hero-photo-frame">
+                        <img src="/images/bruna-hero.webp" alt="Bruna Catarina" width="280" height="420">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bloco 2 — O que é a Mentoria Integral BeeC -->
+        <section class="claro" id="mentoria">
+            <div class="container">
+                <p class="etiqueta">O que é</p>
+                <h2 class="citacao-grande">Eu não acompanho apenas o trade. Eu acompanho a pessoa que decide.</h2>
+                <p>A Mentoria Integral BeeC é um acompanhamento educacional para quem estuda, investe ou opera e quer decidir com mais critério no mercado financeiro.</p>
+                <p>“Integral” quer dizer que o acompanhamento olha para as quatro dimensões que pesam em cada decisão: o que você sabe, como você age sob pressão, no que você se sustenta e o que os seus registros mostram. A técnica sozinha não explica por que alguém que sabe o que fazer faz outra coisa.</p>
+                <p>Cada ciclo começa com um plano, passa pela execução, é revisto com evidência e termina com um ajuste para o próximo ciclo. Quem conduz essa conversa é a Bruna.</p>
+                <p class="nota-rodape-bloco">Não é sala de sinais, não é recomendação de investimento e não tem promessa de resultado.</p>
+            </div>
+        </section>
+
+        <!-- Bloco 3 — As quatro dimensões -->
+        <section class="claro sem-topo" id="dimensoes">
+            <div class="container-wide">
+                <h2>As quatro dimensões da Mentoria Integral</h2>
+                <p>Uma evolução consistente depende das quatro ao mesmo tempo.</p>
+                <div class="dimensoes-grid">
+                    <article class="course-card">
+                        <span class="course-label">01 · Técnica</span>
+                        <h3 class="course-title">O que você precisa compreender.</h3>
+                        <p class="course-description">Mercado, leitura, plano, risco e execução.</p>
+                    </article>
+                    <article class="course-card">
+                        <span class="course-label">02 · Mente</span>
+                        <h3 class="course-title">Como você decide sob pressão.</h3>
+                        <p class="course-description">Disciplina, comportamento, impulso, medo, consistência e decisão.</p>
+                    </article>
+                    <article class="course-card">
+                        <span class="course-label">03 · Princípios</span>
+                        <h3 class="course-title">O que sustenta suas decisões.</h3>
+                        <p class="course-description">Verdade, prudência, responsabilidade, domínio próprio e fé com ação.</p>
+                    </article>
+                    <article class="course-card">
+                        <span class="course-label">04 · Evidência</span>
+                        <h3 class="course-title">O que os fatos revelam.</h3>
+                        <p class="course-description">Dados, IA, plano × execução, VAR do Trade e Júri Pós-Trade BeeC.</p>
+                    </article>
+                </div>
+                <p class="fecho-bloco">A Bruna conecta as quatro e transforma o que a evidência mostra em direção para o próximo ciclo.</p>
+            </div>
+        </section>
+
+        <!-- Bloco 4 — VAR do Trade -->
+        <section class="evidencia" id="var">
+            <div class="container">
+                <p class="etiqueta">VAR do Trade</p>
+                <h2>Antes de culpar o mercado, chama o VAR.</h2>
+                <p>No futebol, o lance só vale depois que o VAR confere. No mercado, quase todo mundo olha o placar — lucro ou prejuízo — e segue em frente.</p>
+                <p>O VAR do Trade é a revisão de uma operação já encerrada, feita com calma, à luz do plano que a própria pessoa escreveu.</p>
+                <ol class="ficha-var" aria-label="As três perguntas do VAR">
+                    <li>Estava no plano?</li>
+                    <li>O risco foi o combinado?</li>
+                    <li>A saída seguiu a regra ou a emoção?</li>
+                </ol>
+                <div class="frases-marca">
+                    <p class="frase-marca">O trader não é julgado. O trade é.</p>
+                    <p class="frase-marca">O gráfico depõe. Os dados testemunham.</p>
+                    <p class="frase-marca">Lucro não absolve uma execução ruim. Prejuízo não condena uma boa leitura.</p>
+                </div>
+                <p class="aviso"><strong>O VAR olha para trás, nunca para a frente.</strong> Não é sinal, não é recomendação e não é previsão de mercado. Ele revisa uma operação que já terminou.</p>
+                <a href="#juri" class="link-seguinte">Entenda o método por trás do VAR ↓</a>
+            </div>
+        </section>
+
+        <!-- Bloco 5 — Júri Pós-Trade BeeC -->
+        <section class="evidencia sem-topo" id="juri">
+            <div class="container-wide">
+                <p class="etiqueta">A metodologia</p>
+                <h2>O VAR é a porta de entrada. O Júri Pós-Trade BeeC é o método.</h2>
+                <p>O Júri Pós-Trade BeeC é uma análise feita depois da operação. Ele reúne os registros da plataforma, o gráfico, o plano vigente e o relato do aluno para separar o que aconteceu do que se acha que aconteceu — e definir o próximo passo.</p>
+                <ol class="fluxo-juri" aria-label="Fluxo do Júri Pós-Trade BeeC">
+                    <li><span class="passo-nome">Operação</span><span class="passo-texto">A execução registrada, já encerrada.</span></li>
+                    <li><span class="passo-nome">Evidência</span><span class="passo-texto">Registros da plataforma, gráfico, plano vigente e relato do aluno.</span></li>
+                    <li><span class="passo-nome">Análise</span><span class="passo-texto">O que o plano mandava, comparado ao que foi feito, com apoio de IA.</span></li>
+                    <li><span class="passo-nome">Mentoria</span><span class="passo-texto">A Bruna interpreta, questiona e decide o foco.</span></li>
+                    <li><span class="passo-nome">Próximo ciclo</span><span class="passo-texto">Um ajuste por vez, testado antes de virar regra.</span></li>
+                </ol>
+                <div class="bloco-interno">
+                    <h3 class="subtitulo-bloco">Cada informação recebe uma etiqueta</h3>
+                    <ul class="selos">
+                        <li>Fato comprovado</li>
+                        <li>Cálculo</li>
+                        <li>Autorregistro</li>
+                        <li>Hipótese</li>
+                    </ul>
+                    <p>Uma hipótese não vira fato por repetição.</p>
+                    <h3 class="subtitulo-bloco">O que o Júri não faz</h3>
+                    <ul class="lista-traco">
+                        <li>Não prevê o mercado.</li>
+                        <li>Não dá sinal em tempo real.</li>
+                        <li>Não decide sozinho.</li>
+                        <li>Não compara alunos em ranking.</li>
+                        <li>Não trata lucro como prova de boa execução nem prejuízo como prova de má leitura.</li>
+                    </ul>
+                    <p class="governanca">O Júri é coordenado pela Bruna Catarina e conta com uma relatoria técnica de IA. A decisão final é sempre humana.</p>
+                    <p class="fecho-juri">Sem evidência, não há veredito.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bloco 6 — IA a serviço da mentoria -->
+        <section class="claro" id="ia">
+            <div class="container">
+                <p class="etiqueta">IA a serviço da mentoria</p>
+                <h2 class="citacao-grande">A IA não escolhe por você. Ela ajuda a enxergar como você escolheu.</h2>
+                <p class="subtitulo-ia">Seu resultado conta o fim da história. Seus dados contam como você chegou até lá.</p>
+                <p>Na mentoria, a IA ajuda a:</p>
+                <ul class="lista-ia">
+                    <li>organizar evidências;</li>
+                    <li>identificar padrões;</li>
+                    <li>comparar plano e execução;</li>
+                    <li>aprofundar a análise;</li>
+                    <li>melhorar a qualidade da revisão.</li>
+                </ul>
+                <p>Ela não decide pelo aluno e não substitui a mentora. A inteligência trabalha nos bastidores. A mentoria continua humana.</p>
+            </div>
+        </section>
+
+        <!-- Bloco 7 — O papel da Bruna -->
+        <section class="escuro" id="bruna">
+            <div class="container-wide">
+                <div class="about-grid">
+                    <div class="profile-photo">
+                        <img src="/images/bruna-profile.webp" alt="Bruna Catarina" width="220" height="330" loading="lazy">
+                    </div>
+                    <div class="about-content">
+                        <p class="etiqueta">Quem conduz</p>
+                        <h2>A tecnologia amplia a leitura. A direção é da Bruna.</h2>
+                        <dl class="verbos">
+                            <div><dt>Interpreta</dt><dd>Lê a evidência no contexto de cada pessoa.</dd></div>
+                            <div><dt>Questiona</dt><dd>Faz as perguntas que o resultado sozinho não faz.</dd></div>
+                            <div><dt>Conecta técnica e comportamento</dt><dd>Mostra onde o gráfico e a decisão se encontram.</dd></div>
+                            <div><dt>Decide o foco da mentoria</dt><dd>Escolhe o que trabalhar em cada ciclo.</dd></div>
+                            <div><dt>Transforma evidência em direção</dt><dd>Sai de cada revisão com um próximo passo.</dd></div>
+                        </dl>
+                        <p class="apresentacao">Educadora, mentora e fundadora da BCB Educacional. Antes da educação, foram 20 anos de carreira corporativa em vendas complexas para a alta liderança de multinacionais como HSBC, PayPal, Sodexo, Cielo e IBM. Estudo, opero e ensino o que vivo.</p>
+                        <blockquote class="quote">“Não ensino para criar dependência. Ensino para ampliar compreensão, critério e autonomia.”</blockquote>
+                        <p class="principio">Fé com ação: princípios que sustentam o processo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bloco 8 — Provas -->
+        <section class="claro" id="provas">
+            <div class="container">
+                <p class="etiqueta">Provas</p>
+                <h2>Experiência real, sem atalhos</h2>
+                <ul class="lista-provas">
+                    <li><span class="prova-tipo">Trajetória</span>20 anos de carreira corporativa em vendas complexas para C-Level em HSBC, PayPal, Sodexo, Cielo e IBM.</li>
+                    <li><span class="prova-tipo">IA antes da era ChatGPT</span>Na IBM (2018–2022), apresentou e vendeu soluções de IA, IoT e transformação digital para decisores.</li>
+                    <li><span class="prova-tipo">Educação</span>Fundadora da BCB Educacional, com curso gravado publicado e mentorias conduzidas.</li>
+                    <li><span class="prova-tipo">Mercado</span>Influenciadora oficial da Toro Investimentos (grupo Santander).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Bloco 9 — Conversa -->
+        <section class="escuro cta-section" id="conversa">
+            <div class="container">
+                <h2>Vamos conversar sobre o seu momento?</h2>
+                <p class="cta-texto">Conte em que ponto você está e o que quer construir. A partir daí, a gente vê junto se a Mentoria Integral faz sentido agora.</p>
+                <div class="cta-botoes">
+                    <a href="https://wa.me/5511975828778?text=Ol%C3%A1%2C%20Bruna%21%20Vim%20pela%20p%C3%A1gina%20da%20Mentoria%20Integral%20BeeC%20e%20quero%20entender%20se%20esse%20acompanhamento%20faz%20sentido%20para%20o%20meu%20momento." class="btn btn-primary-fill btn-arrow" target="_blank" rel="noopener">Falar com a Bruna</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSessPrZxMMJo0japqlSpnxhB_C1ct5C9uf718Y4EItiG6wEcA/viewform" class="btn btn-outline-full" target="_blank" rel="noopener">Quero conhecer a Mentoria Integral BeeC</a>
+                </div>
+
+                <div class="community-section">
+                    <h3>Comunidade Colmeia dos Traders</h3>
+                    <p class="community-description">Ainda não é o momento da mentoria? Entre na Colmeia, a comunidade gratuita para acompanhar estudos, reflexões e conteúdos sobre o mercado financeiro. Sem sala de sinais e sem promessa de resultado.</p>
+                    <a href="https://t.me/+Lks6wL0rWGlmMzIx" class="btn btn-arrow" target="_blank" rel="noopener">Entrar na Colmeia</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-disclaimer">Todo o conteúdo deste site tem caráter exclusivamente educacional e não constitui recomendação de compra ou venda de ativos, oferta de investimento ou garantia de resultado. Operações no mercado financeiro envolvem riscos, inclusive a possibilidade de perda de capital. Cada pessoa é responsável por suas decisões e pelo próprio gerenciamento de risco. Resultados passados ou pessoais não garantem resultados futuros.</p>
+        <p>&copy; 2026 Bruna Catarina BeeC. Todos os direitos reservados.</p>
+        <p class="footer-links"><a href="/" class="footer-home">Voltar para a página inicial</a> · <a href="/privacidade" class="footer-home">Privacidade</a></p>
+    </footer>
+
+    <!-- Rastreamento de cliques: mesmo padrão da home (.btn → evento button_click) -->
+    <script>
+        document.querySelectorAll('.btn').forEach(function (el) {
+            el.addEventListener('click', function () {
+                if (typeof gtag !== 'function') return;
+                gtag('event', 'button_click', {
+                    'button_text': this.textContent.trim(),
+                    'page': 'mercado-financeiro',
+                    'timestamp': new Date().toISOString()
+                });
+            });
+        });
+    </script>
+</body>
+</html>
