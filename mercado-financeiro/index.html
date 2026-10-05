@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Colmeia do Mercado | Mentoria Integrada BeeC</title>
-    <meta name="description" content="Mercado é técnico. Decisão é humana. Mentoria em mercado financeiro com técnica, mentalidade, princípios e evidência. Sem sinais, sem promessa.">
+    <title>A Colmeia do Mercado | Bruna Catarina · BeeC</title>
+    <meta name="description" content="Mercado é técnico. Decisão é humana. Educação, método e evidência em mercado financeiro: comunidade, cursos, VAR do Trade e Mentoria Integrada BeeC. Sem sinais, sem promessa.">
     <link rel="canonical" href="https://colmeia-bruna-19c1.vercel.app/mercado-financeiro">
+    <link rel="icon" href="/images/logo.png" type="image/png">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="A Colmeia do Mercado | Mentoria Integrada BeeC">
-    <meta property="og:description" content="Mercado é técnico. Decisão é humana. Mentoria em mercado financeiro com técnica, mentalidade, princípios e evidência. Sem sinais, sem promessa.">
+    <meta property="og:title" content="A Colmeia do Mercado | Bruna Catarina · BeeC">
+    <meta property="og:description" content="Mercado é técnico. Decisão é humana. Educação, método e evidência em mercado financeiro: comunidade, cursos, VAR do Trade e Mentoria Integrada BeeC. Sem sinais, sem promessa.">
     <meta property="og:url" content="https://colmeia-bruna-19c1.vercel.app/mercado-financeiro">
     <!-- OG FINAL CANDIDATA v0.7: /images/og-mercado-financeiro.jpg (JPEG 1200×630, og:image principal). Só vale em produção depois do QA visual e da aprovação da Bruna. -->
     <meta property="og:image" content="https://colmeia-bruna-19c1.vercel.app/images/og-mercado-financeiro.jpg">
@@ -19,8 +20,8 @@
     <meta property="og:image:alt" content="Bruna Catarina e a frase: Mercado é técnico. Decisão é humana. Evolução é integral. Mentoria Integrada BeeC. Bruna Catarina · BeeC.">
     <meta property="og:locale" content="pt_BR">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="A Colmeia do Mercado | Mentoria Integrada BeeC">
-    <meta name="twitter:description" content="Mercado é técnico. Decisão é humana. Mentoria em mercado financeiro com técnica, mentalidade, princípios e evidência. Sem sinais, sem promessa.">
+    <meta name="twitter:title" content="A Colmeia do Mercado | Bruna Catarina · BeeC">
+    <meta name="twitter:description" content="Mercado é técnico. Decisão é humana. Educação, método e evidência em mercado financeiro: comunidade, cursos, VAR do Trade e Mentoria Integrada BeeC. Sem sinais, sem promessa.">
     <meta name="twitter:image" content="https://colmeia-bruna-19c1.vercel.app/images/og-mercado-financeiro.jpg">
 
     <link rel="preload" href="/fonts/spectral-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -248,7 +249,44 @@
         .footer-disclaimer { max-width: 640px; margin: 0 auto 16px; font-size: 12px; line-height: 1.7; opacity: 0.85; }
         .footer-home { display: inline-block; margin-top: 4px; padding: 12px 0; color: var(--dourado-claro); }
 
+        /* v0.8 — Bloco 3: Escolha seu caminho (sobre fundo escuro, tokens MIV v2.1) */
+        .caminhos-intro { max-width: 40em; }
+        .caminhos-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 32px; }
+        .caminho-card { display: flex; flex-direction: column; gap: 10px; padding: 24px 22px; border: 1px solid rgba(240, 223, 168, 0.28); border-top: 3px solid var(--dourado); border-radius: 12px; background: rgba(11, 16, 36, 0.35); }
+        .caminho-card.premium { border-color: rgba(232, 160, 191, 0.45); border-top-color: var(--rosa); }
+        .caminho-label { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--dourado); }
+        .caminho-card.premium .caminho-label { color: var(--rosa); }
+        .caminho-titulo { font-family: var(--serif); font-weight: 500; font-size: 22px; line-height: 1.25; color: var(--creme); }
+        .caminho-texto { font-size: 16px; }
+        .caminho-links { list-style: none; display: grid; gap: 4px; margin-top: auto; padding-top: 6px; }
+        .caminho-links a { display: inline-flex; align-items: baseline; gap: 8px; padding: 8px 0; font-weight: 700; font-size: 16px; color: var(--dourado-claro); }
+        .caminho-links a::after { content: '→'; }
+        .caminho-links a:hover { color: var(--creme); }
+        .caminho-links .meta { display: block; font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: 0.06em; color: var(--texto-sobre-escuro); opacity: 0.75; margin-top: -4px; }
+        .plataformas { margin-top: 40px; padding-top: 28px; border-top: 1px solid rgba(240, 223, 168, 0.2); }
+        .plataformas h3 { font-size: 20px; margin-bottom: 8px; }
+        .plataformas-intro { font-size: 15px; max-width: 40em; }
+        .plataformas-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 20px; }
+        .plataforma { display: flex; flex-direction: column; gap: 8px; padding: 20px; border: 1px solid rgba(240, 223, 168, 0.2); border-radius: 12px; }
+        .plataforma-logo { height: 30px; width: auto; }
+        .logo-chip { display: inline-flex; align-self: flex-start; background: var(--creme); padding: 6px 12px; border-radius: 8px; }
+        .plataforma-titulo { font-family: var(--sans); font-weight: 700; font-size: 16px; color: var(--creme); }
+        .plataforma p { font-size: 15px; }
+        .plataforma .nota { font-size: 12px; opacity: 0.7; }
+        .plataforma a.link-caminho { font-weight: 700; font-size: 15px; color: var(--dourado-claro); padding: 6px 0; }
+        .plataforma a.link-caminho::after { content: ' →'; }
+
+        /* v0.8 — Bloco Mentoria (acompanhamento individual, sobre fundo escuro) */
+        .mentoria-bloco .citacao-grande { color: var(--creme); }
+        .mentoria-bloco .nota-rodape-bloco { border-top-color: rgba(240, 223, 168, 0.2); }
+        .mentoria-cta { margin-top: 32px; display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+        .mentoria-cta .btn-primary-fill { width: 100%; }
+        .link-discreto { font-size: 15px; color: var(--dourado-claro); text-decoration: underline; text-underline-offset: 3px; padding: 8px 0; }
+        .link-discreto:hover { color: var(--creme); }
+        .voltar-caminhos { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(240, 223, 168, 0.2); font-size: 15px; }
+
         @media (min-width: 480px) {
+            .mentoria-cta .btn-primary-fill { width: auto; }
             .btn-primary-fill, .btn-outline-full, .cta-section .btn-primary-fill, .cta-botoes .btn { width: auto; }
             .cta-botoes { flex-direction: row; flex-wrap: wrap; justify-content: center; }
             .hero-ctas { flex-direction: row; flex-wrap: wrap; }
@@ -274,6 +312,8 @@
             .about-grid { display: grid; grid-template-columns: 220px 1fr; gap: 48px; align-items: start; }
             .profile-photo { width: 220px; margin: 0; }
             .frase-marca { font-size: 26px; }
+            .caminhos-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+            .plataformas-grid { grid-template-columns: 1fr 1fr; }
         }
 
         @media (min-width: 1000px) {
@@ -291,7 +331,7 @@
     </header>
 
     <main>
-        <!-- Bloco 1 — Hero -->
+        <!-- Bloco 1 — Visão / Hero (v0.8: abre com educação + processo + decisão, sem CTA comercial) -->
         <section class="escuro hero-section" id="topo">
             <svg class="hero-hive" viewBox="-60 -60 240 240" aria-hidden="true"><g>
                 <polygon points="-15.0,-42.5 8.8,-28.8 8.8,-1.3 -15.0,12.5 -38.8,-1.3 -38.8,-28.8"/>
@@ -305,10 +345,10 @@
                     <div class="hero-text">
                         <p class="etiqueta"><span class="ponto-luz" aria-hidden="true"></span>A Colmeia do Mercado</p>
                         <h1><span class="h1-linha">Mercado é técnico.</span> <span class="h1-linha">Decisão é humana.</span> <span class="h1-linha">Evolução é integral.</span></h1>
-                        <p class="hero-sub">Técnica, mentalidade, princípios e evidência trabalhando juntas para formar decisões melhores — com mentoria humana, dados e IA ampliando o que conseguimos enxergar.</p>
+                        <p class="hero-sub">Educação e processo para quem estuda, investe ou opera e quer decidir melhor no mercado financeiro — com técnica, mentalidade, princípios e evidência trabalhando juntas.</p>
                         <div class="hero-ctas">
-                            <a href="#mentoria" class="btn btn-primary-fill">Conheça a Mentoria Integrada BeeC</a>
-                            <a href="#var" class="btn btn-outline-full">Veja como funciona o VAR do Trade</a>
+                            <a href="#caminhos" class="btn btn-primary-fill">Escolha seu caminho</a>
+                            <a href="#var" class="btn btn-outline-full">Conheça o método</a>
                         </div>
                         <p class="hero-apoio">Educação e acompanhamento. Sem sala de sinais e sem promessa de resultado.</p>
                     </div>
@@ -319,23 +359,89 @@
             </div>
         </section>
 
-        <!-- Bloco 2 — O que é a Mentoria Integrada BeeC -->
-        <section class="claro" id="mentoria">
+        <!-- Bloco 2 — O que é A Colmeia do Mercado -->
+        <section class="claro" id="colmeia">
             <div class="container">
                 <p class="etiqueta">O que é</p>
-                <h2 class="citacao-grande">Eu não acompanho apenas o trade. Eu acompanho a pessoa que decide.</h2>
-                <p>A Mentoria Integrada BeeC é um acompanhamento educacional para quem estuda, investe ou opera e quer decidir com mais critério no mercado financeiro.</p>
-                <p>“Integrada” quer dizer que o acompanhamento olha para as quatro dimensões que pesam em cada decisão: o que você sabe, como você age sob pressão, no que você se sustenta e o que os seus registros mostram. A técnica sozinha não explica por que alguém que sabe o que fazer faz outra coisa.</p>
-                <p>Cada ciclo começa com um plano, passa pela execução, é revisto com evidência e termina com um ajuste para o próximo ciclo. Quem conduz essa conversa é a Bruna.</p>
+                <h2 class="citacao-grande">Um lugar para aprender a decidir — não para receber decisão pronta.</h2>
+                <p>A Colmeia do Mercado é o ambiente onde a Bruna Catarina organiza o que ensina sobre mercado financeiro: conhecimento, técnica, risco, comportamento, princípios, evidência e processo — a partir do aprendizado real de quem estuda e opera.</p>
+                <p>Existem formas diferentes de entrar e de aprofundar. Você pode acompanhar a comunidade gratuita, estudar pelos cursos gravados, conhecer o método de revisão que a Bruna usa e, se precisar de algo mais próximo, avaliar o acompanhamento individual.</p>
                 <p class="nota-rodape-bloco">Não é sala de sinais, não é recomendação de investimento e não tem promessa de resultado.</p>
             </div>
         </section>
 
-        <!-- Bloco 3 — As quatro dimensões -->
-        <section class="claro sem-topo" id="dimensoes">
+        <!-- Bloco 3 — Comece por aqui / Escolha seu caminho -->
+        <section class="escuro" id="caminhos">
             <div class="container-wide">
-                <h2>As quatro dimensões da Mentoria Integrada</h2>
-                <p>Uma evolução consistente depende das quatro ao mesmo tempo.</p>
+                <p class="etiqueta">Comece por aqui</p>
+                <h2>Escolha seu caminho</h2>
+                <p class="caminhos-intro">Cada caminho atende a um momento diferente. Nenhum deles é obrigatório para chegar ao próximo.</p>
+                <div class="caminhos-grid">
+                    <article class="caminho-card">
+                        <span class="caminho-label">01 · Acompanhar</span>
+                        <h3 class="caminho-titulo">Estudar junto, sem custo.</h3>
+                        <p class="caminho-texto">A Comunidade Colmeia dos Traders reúne estudos, reflexões e conteúdos sobre o mercado financeiro. No Instagram, a Bruna publica educação, método e bastidores do processo.</p>
+                        <ul class="caminho-links">
+                            <li><a href="https://t.me/+Lks6wL0rWGlmMzIx" class="link-caminho" target="_blank" rel="noopener">Entrar na Colmeia dos Traders</a><span class="meta">Telegram · gratuito</span></li>
+                            <li><a href="https://www.instagram.com/brunacatarinaoficial/" class="link-caminho" target="_blank" rel="noopener">Acompanhar no Instagram</a><span class="meta">@brunacatarinaoficial</span></li>
+                        </ul>
+                    </article>
+                    <article class="caminho-card">
+                        <span class="caminho-label">02 · Aprender</span>
+                        <h3 class="caminho-titulo">Estudar no seu ritmo.</h3>
+                        <p class="caminho-texto">Cursos gravados, com acesso imediato, para quem quer uma base técnica organizada — sem fórmula mágica e sem calls.</p>
+                        <ul class="caminho-links">
+                            <li><a href="https://chk.eduzz.com/E9OOEA5G9B" class="link-caminho" target="_blank" rel="noopener">Setup da Vovózinha Catarina</a><span class="meta">Curso gravado · cerca de 3 horas</span></li>
+                            <li><a href="https://chk.eduzz.com/39YDEZQQ9O" class="link-caminho" target="_blank" rel="noopener">Day Trade desde a Abertura de Mercado</a><span class="meta">Curso gravado · mais de 8 horas</span></li>
+                        </ul>
+                    </article>
+                    <article class="caminho-card">
+                        <span class="caminho-label">03 · Entender seu processo</span>
+                        <h3 class="caminho-titulo">O gráfico depõe. Os dados testemunham.</h3>
+                        <p class="caminho-texto">O VAR do Trade e o Júri Pós-Trade BeeC mostram como a Bruna revisa decisões: com plano, registros e evidência — não com o placar do dia.</p>
+                        <ul class="caminho-links">
+                            <li><a href="#var" class="link-caminho">Ver como funciona o VAR do Trade</a></li>
+                        </ul>
+                    </article>
+                    <article class="caminho-card premium">
+                        <span class="caminho-label">04 · Acompanhamento individual</span>
+                        <h3 class="caminho-titulo">Para quem precisa de um olhar mais próximo.</h3>
+                        <p class="caminho-texto">A Mentoria Integrada BeeC é um acompanhamento premium e individual, conduzido pessoalmente pela Bruna. As vagas dependem da agenda dela — por isso não é o caminho de todo mundo.</p>
+                        <ul class="caminho-links">
+                            <li><a href="#mentoria" class="link-caminho">Entender a Mentoria Integrada BeeC</a></li>
+                        </ul>
+                    </article>
+                </div>
+
+                <div class="plataformas" id="plataformas">
+                    <h3>Plataformas</h3>
+                    <p class="plataformas-intro">Plataformas que a Bruna conhece e apresenta com transparência. Antes de decidir, avalie condições, riscos e adequação ao seu perfil.</p>
+                    <div class="plataformas-grid">
+                        <div class="plataforma">
+                            <span class="logo-chip"><img src="/images/toro-logo.webp" alt="Toro Investimentos, uma empresa Santander" class="plataforma-logo" loading="lazy"></span>
+                            <p class="plataforma-titulo">Toro Investimentos</p>
+                            <p>A Bruna é influenciadora oficial da Toro Investimentos (grupo Santander). Se fizer sentido para o seu momento, conheça as condições e decida com consciência.</p>
+                            <a href="https://mkt.toroinvestimentos.com.br/influencer/bruna-catarina" class="link-caminho" target="_blank" rel="noopener">Conhecer a Toro</a>
+                            <p class="nota">Link de parceria comercial. Esta apresentação não constitui recomendação de investimento.</p>
+                        </div>
+                        <div class="plataforma">
+                            <img src="/images/hfm-logo.webp" alt="HFM - HF Markets" class="plataforma-logo" loading="lazy">
+                            <p class="plataforma-titulo">HFM | Plataforma internacional</p>
+                            <p>Uma alternativa internacional para quem deseja conhecer outros mercados e já compreende os riscos envolvidos nesse tipo de operação.</p>
+                            <a href="https://www.hfm.com/int/?refid=30462492" class="link-caminho" target="_blank" rel="noopener">Conhecer a HFM</a>
+                            <p class="nota">Link de parceria comercial. Antes de decidir, conheça a plataforma, sua regulamentação, seus custos e os riscos envolvidos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bloco 4 — As quatro dimensões (visão e método da Bruna, não benefícios da Mentoria) -->
+        <section class="claro" id="dimensoes">
+            <div class="container-wide">
+                <p class="etiqueta">Como a Bruna pensa o mercado</p>
+                <h2>Quatro dimensões em cada decisão</h2>
+                <p>É assim que a Bruna ensina e analisa mercado financeiro — nos conteúdos, nos cursos e no acompanhamento. Uma evolução consistente depende das quatro ao mesmo tempo.</p>
                 <div class="dimensoes-grid">
                     <article class="course-card">
                         <span class="course-label">01 · Técnica</span>
@@ -358,33 +464,34 @@
                         <p class="course-description">Dados, IA, plano × execução, VAR do Trade e Júri Pós-Trade BeeC.</p>
                     </article>
                 </div>
-                <p class="fecho-bloco">A Bruna conecta as quatro e transforma o que a evidência mostra em direção para o próximo ciclo.</p>
+                <p class="fecho-bloco">A técnica sozinha não explica por que alguém que sabe o que fazer faz outra coisa.</p>
             </div>
         </section>
 
-        <!-- Bloco 4 — VAR do Trade -->
+        <!-- Bloco 5 — VAR do Trade (prova metodológica; hierarquia pública aprovada) -->
         <section class="evidencia" id="var">
             <div class="container">
                 <p class="etiqueta">VAR do Trade</p>
-                <h2>Antes de culpar o mercado, chama o VAR.</h2>
+                <h2>O gráfico depõe. Os dados testemunham.</h2>
                 <p>No futebol, o lance só vale depois que o VAR confere. No mercado, quase todo mundo olha o placar — lucro ou prejuízo — e segue em frente.</p>
-                <p>O VAR do Trade é a revisão de uma operação já encerrada, feita com calma, à luz do plano que a própria pessoa escreveu.</p>
+                <p>O VAR do Trade é a revisão de uma operação já encerrada, feita com calma, à luz do plano que a própria pessoa escreveu. É a forma mais direta de ver como a Bruna pensa, analisa e acompanha decisões.</p>
                 <ol class="ficha-var" aria-label="As três perguntas do VAR">
                     <li>Estava no plano?</li>
                     <li>O risco foi o combinado?</li>
                     <li>A saída seguiu a regra ou a emoção?</li>
                 </ol>
                 <div class="frases-marca">
+                    <p class="frase-marca">A IA organiza as evidências. A decisão continua humana.</p>
                     <p class="frase-marca">O trader não é julgado. O trade é.</p>
-                    <p class="frase-marca">O gráfico depõe. Os dados testemunham.</p>
                     <p class="frase-marca">Lucro não absolve uma execução ruim. Prejuízo não condena uma boa leitura.</p>
                 </div>
                 <p class="aviso"><strong>O VAR olha para trás, nunca para a frente.</strong> Não é sinal, não é recomendação e não é previsão de mercado. Ele revisa uma operação que já terminou.</p>
+                <p class="fecho-juri">Antes de culpar o mercado, chama o VAR do Trade.</p>
                 <a href="#juri" class="link-seguinte">Entenda o método por trás do VAR ↓</a>
             </div>
         </section>
 
-        <!-- Bloco 5 — Júri Pós-Trade BeeC -->
+        <!-- Bloco 6 — Júri Pós-Trade BeeC (preservado) -->
         <section class="evidencia sem-topo" id="juri">
             <div class="container-wide">
                 <p class="etiqueta">A metodologia</p>
@@ -420,13 +527,13 @@
             </div>
         </section>
 
-        <!-- Bloco 6 — IA a serviço da mentoria -->
+        <!-- Bloco 7 — IA nos bastidores -->
         <section class="claro" id="ia">
             <div class="container">
-                <p class="etiqueta">IA a serviço da mentoria</p>
+                <p class="etiqueta">IA nos bastidores</p>
                 <h2 class="citacao-grande">A IA não escolhe por você. Ela ajuda a enxergar como você escolheu.</h2>
                 <p class="subtitulo-ia">Seu resultado conta o fim da história. Seus dados contam como você chegou até lá.</p>
-                <p>Na mentoria, a IA ajuda a:</p>
+                <p>Na revisão, a IA ajuda a:</p>
                 <ul class="lista-ia">
                     <li>organizar evidências;</li>
                     <li>identificar padrões;</li>
@@ -434,11 +541,11 @@
                     <li>aprofundar a análise;</li>
                     <li>melhorar a qualidade da revisão.</li>
                 </ul>
-                <p>Ela não decide pelo aluno e não substitui a mentora. A inteligência trabalha nos bastidores. A mentoria continua humana.</p>
+                <p>Ela não decide por ninguém e não substitui a mentora. A inteligência trabalha nos bastidores. A direção continua humana.</p>
             </div>
         </section>
 
-        <!-- Bloco 7 — O papel da Bruna -->
+        <!-- Bloco 8 — Quem conduz -->
         <section class="escuro" id="bruna">
             <div class="container-wide">
                 <div class="about-grid">
@@ -452,7 +559,6 @@
                             <div><dt>Interpreta</dt><dd>Lê a evidência no contexto de cada pessoa.</dd></div>
                             <div><dt>Questiona</dt><dd>Faz as perguntas que o resultado sozinho não faz.</dd></div>
                             <div><dt>Conecta técnica e comportamento</dt><dd>Mostra onde o gráfico e a decisão se encontram.</dd></div>
-                            <div><dt>Decide o foco da mentoria</dt><dd>Escolhe o que trabalhar em cada ciclo.</dd></div>
                             <div><dt>Transforma evidência em direção</dt><dd>Sai de cada revisão com um próximo passo.</dd></div>
                         </dl>
                         <p class="apresentacao">Educadora, mentora e fundadora da BCB Educacional. Antes da educação, foram 20 anos de carreira corporativa em vendas complexas para a alta liderança de multinacionais como HSBC, PayPal, Sodexo, Cielo e IBM. Estudo, opero e ensino o que vivo.</p>
@@ -463,7 +569,7 @@
             </div>
         </section>
 
-        <!-- Bloco 8 — Provas -->
+        <!-- Bloco 9 — Provas -->
         <section class="claro" id="provas">
             <div class="container">
                 <p class="etiqueta">Provas</p>
@@ -471,27 +577,26 @@
                 <ul class="lista-provas">
                     <li><span class="prova-tipo">Trajetória</span>20 anos de carreira corporativa em vendas complexas para C-Level em HSBC, PayPal, Sodexo, Cielo e IBM.</li>
                     <li><span class="prova-tipo">IA antes da era ChatGPT</span>Na IBM (2018–2022), apresentou e vendeu soluções de IA, IoT e transformação digital para decisores.</li>
-                    <li><span class="prova-tipo">Educação</span>Fundadora da BCB Educacional, com curso gravado publicado e mentorias conduzidas.</li>
+                    <li><span class="prova-tipo">Educação</span>Fundadora da BCB Educacional, com cursos gravados publicados e mentorias conduzidas.</li>
                     <li><span class="prova-tipo">Mercado</span>Influenciadora oficial da Toro Investimentos (grupo Santander).</li>
                 </ul>
             </div>
         </section>
 
-        <!-- Bloco 9 — Conversa -->
-        <section class="escuro cta-section" id="conversa">
+        <!-- Bloco 10 — Mentoria Integrada BeeC (reposicionada: aparece depois de visão, método e outros caminhos) -->
+        <section class="escuro mentoria-bloco" id="mentoria">
             <div class="container">
-                <h2>Vamos conversar sobre o seu momento?</h2>
-                <p class="cta-texto">Conte em que ponto você está e o que quer construir. A partir daí, a gente vê junto se a Mentoria Integrada faz sentido agora.</p>
-                <div class="cta-botoes">
-                    <a href="https://wa.me/5511975828778?text=Ol%C3%A1%2C%20Bruna%21%20Vim%20pela%20p%C3%A1gina%20da%20Mentoria%20Integrada%20BeeC%20e%20quero%20entender%20se%20esse%20acompanhamento%20faz%20sentido%20para%20o%20meu%20momento." class="btn btn-primary-fill btn-arrow" target="_blank" rel="noopener">Falar com a Bruna</a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSessPrZxMMJo0japqlSpnxhB_C1ct5C9uf718Y4EItiG6wEcA/viewform" class="btn btn-outline-full" target="_blank" rel="noopener">Quero conhecer a Mentoria Integrada BeeC</a>
+                <p class="etiqueta"><span class="ponto-luz" aria-hidden="true"></span>Acompanhamento individual</p>
+                <h2 class="citacao-grande">Eu não acompanho apenas o trade. Eu acompanho a pessoa que decide.</h2>
+                <p>Se você precisa de acompanhamento individual mais profundo, existe a Mentoria Integrada BeeC.</p>
+                <p>É a aplicação, caso a caso, de tudo o que está nesta página: as quatro dimensões, o VAR do Trade e o Júri Pós-Trade BeeC. Cada ciclo começa com um plano, passa pela execução, é revisto com evidência e termina com um ajuste para o próximo ciclo. Quem conduz essa conversa é a Bruna.</p>
+                <p>Por ser individual e conduzida pessoalmente por ela, a mentoria tem número de vagas limitado pela agenda da Bruna. Antes de qualquer proposta, vocês conversam para ver se faz sentido para o seu momento.</p>
+                <p class="nota-rodape-bloco">Não é sala de sinais, não é recomendação de investimento e não tem promessa de resultado.</p>
+                <div class="mentoria-cta" id="conversa">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSessPrZxMMJo0japqlSpnxhB_C1ct5C9uf718Y4EItiG6wEcA/viewform" class="btn btn-primary-fill btn-arrow" target="_blank" rel="noopener">Quero entender se esse acompanhamento faz sentido para mim</a>
+                    <a href="https://wa.me/5511975828778?text=Ol%C3%A1%2C%20Bruna%21%20Vim%20pela%20p%C3%A1gina%20da%20Mentoria%20Integrada%20BeeC%20e%20quero%20entender%20se%20esse%20acompanhamento%20faz%20sentido%20para%20o%20meu%20momento." class="link-discreto" target="_blank" rel="noopener">Prefere conversar antes? Fale com a Bruna pelo WhatsApp</a>
                 </div>
-
-                <div class="community-section">
-                    <h3>Comunidade Colmeia dos Traders</h3>
-                    <p class="community-description">Ainda não é o momento da mentoria? Entre na Colmeia, a comunidade gratuita para acompanhar estudos, reflexões e conteúdos sobre o mercado financeiro. Sem sala de sinais e sem promessa de resultado.</p>
-                    <a href="https://t.me/+Lks6wL0rWGlmMzIx" class="btn btn-arrow" target="_blank" rel="noopener">Entrar na Colmeia</a>
-                </div>
+                <p class="voltar-caminhos">Ainda não é o momento da mentoria? <a href="#caminhos">Volte aos outros caminhos da Colmeia</a>.</p>
             </div>
         </section>
     </main>
@@ -502,9 +607,9 @@
         <p class="footer-links"><a href="/" class="footer-home">Voltar para a página inicial</a> · <a href="/privacidade" class="footer-home">Privacidade</a></p>
     </footer>
 
-    <!-- Rastreamento de cliques: mesmo padrão da home (.btn → evento button_click) -->
+    <!-- Rastreamento de cliques: mesmo padrão da home (.btn → evento button_click); v0.8 inclui os links dos caminhos -->
     <script>
-        document.querySelectorAll('.btn').forEach(function (el) {
+        document.querySelectorAll('.btn, .link-caminho, .link-discreto').forEach(function (el) {
             el.addEventListener('click', function () {
                 if (typeof gtag !== 'function') return;
                 gtag('event', 'button_click', {

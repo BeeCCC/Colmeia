@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruna Catarina | Educação e Mercado Financeiro</title>
-    <meta name="description" content="Conteúdo e caminhos de aprofundamento para quem deseja compreender o mercado financeiro com mais clareza, disciplina e consciência de risco.">
+    <title>Bruna Catarina | Educação, Mercado Financeiro e IA aplicada</title>
+    <meta name="description" content="Bruna Catarina é educadora e mentora. Dois territórios, uma mesma base de método e decisão humana: educação em mercado financeiro (A Colmeia do Mercado) e IA aplicada para executivos e times comerciais.">
+
+    <link rel="canonical" href="https://colmeia-bruna-19c1.vercel.app/">
+    <link rel="icon" href="/images/logo.png" type="image/png">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Bruna Catarina | Educação e Mercado Financeiro">
-    <meta property="og:description" content="Conteúdo e caminhos de aprofundamento para quem deseja compreender o mercado financeiro com mais clareza, disciplina e consciência de risco.">
-    <meta property="og:url" content="https://www.brunacatarina.com/">
-    <meta property="og:image" content="https://www.brunacatarina.com/images/og-image.webp">
+    <meta property="og:title" content="Bruna Catarina | Educação, Mercado Financeiro e IA aplicada">
+    <meta property="og:description" content="Bruna Catarina é educadora e mentora. Dois territórios, uma mesma base de método e decisão humana: educação em mercado financeiro (A Colmeia do Mercado) e IA aplicada para executivos e times comerciais.">
+    <meta property="og:url" content="https://colmeia-bruna-19c1.vercel.app/">
+    <meta property="og:image" content="https://colmeia-bruna-19c1.vercel.app/images/og-image.webp">
     <meta property="og:image:width" content="1000">
     <meta property="og:image:height" content="525">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Bruna Catarina | Educação e Mercado Financeiro">
-    <meta name="twitter:description" content="Conteúdo e caminhos de aprofundamento para quem deseja compreender o mercado financeiro com mais clareza, disciplina e consciência de risco.">
-    <meta name="twitter:image" content="https://www.brunacatarina.com/images/og-image.webp">
+    <meta name="twitter:title" content="Bruna Catarina | Educação, Mercado Financeiro e IA aplicada">
+    <meta name="twitter:description" content="Bruna Catarina é educadora e mentora. Dois territórios, uma mesma base de método e decisão humana: educação em mercado financeiro (A Colmeia do Mercado) e IA aplicada para executivos e times comerciais.">
+    <meta name="twitter:image" content="https://colmeia-bruna-19c1.vercel.app/images/og-image.webp">
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9K2Y7Q4WZ"></script>
@@ -682,6 +685,111 @@
             }
         }
 
+        /* v0.8 — Duas portas (navegação institucional) */
+        .portas-section {
+            margin: 50px 0;
+        }
+
+        .portas-section h2 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            color: var(--color-cream);
+            text-align: center;
+        }
+
+        .portas-intro {
+            text-align: center;
+            color: var(--color-text);
+            margin: 0 auto 34px;
+            font-size: 15px;
+            max-width: 600px;
+        }
+
+        .portas-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        @media (min-width: 768px) {
+            .portas-grid {
+                grid-template-columns: 1fr 1fr;
+                align-items: stretch;
+            }
+        }
+
+        .porta-card {
+            display: flex;
+            flex-direction: column;
+            background: var(--color-navy-card);
+            border: 1px solid rgba(210, 173, 85, 0.25);
+            border-top: 3px solid var(--color-gold);
+            border-radius: 12px;
+            padding: 30px 26px;
+        }
+
+        .porta-label {
+            color: var(--color-gold);
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .porta-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--color-cream);
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .porta-text {
+            color: var(--color-text);
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 14px;
+        }
+
+        .porta-lista {
+            list-style: none;
+            margin: 0 0 22px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            flex-grow: 1;
+            align-content: flex-start;
+        }
+
+        .porta-lista li {
+            font-size: 12px;
+            color: var(--color-cream);
+            border: 1px solid rgba(210, 173, 85, 0.35);
+            border-radius: 50px;
+            padding: 5px 12px;
+        }
+
+        .porta-card .btn {
+            align-self: flex-start;
+        }
+
+        .porta-canal {
+            margin-top: 12px;
+            font-size: 12px;
+            opacity: 0.7;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            display: inline-block;
+            padding: 10px 6px;
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -747,7 +855,7 @@
     <main>
         <header>
             <div class="logo">
-                <img src="images/logo.png" alt="BeeC Logo" class="logo-image">
+                <img src="/images/logo.png" alt="BeeC Logo" class="logo-image" width="40" height="40">
                 <span class="logo-text">Bruna Catarina</span>
             </div>
         </header>
@@ -757,32 +865,69 @@
                 <div class="hero-flex">
                     <div class="hero-text">
                         <div class="hero-eyebrow-block">
-                            <div class="tagline">EDUCAÇÃO • PROCESSO • CONSCIÊNCIA</div>
-                            <h1>Mercado financeiro com mais clareza, processo e consciência.</h1>
+                            <div class="tagline">EDUCAÇÃO • MÉTODO • DECISÃO HUMANA</div>
+                            <h1>Método, experiência real e tecnologia para decidir melhor.</h1>
                         </div>
                         <div class="hero-subtitle-block">
-                            <div class="tagline-detail">Para quem estuda, investe ou opera e quer tomar decisões com mais critério, disciplina e respeito ao risco.</div>
+                            <div class="tagline-detail">Sou Bruna Catarina, educadora e mentora. Atuo em dois territórios: educação em mercado financeiro e IA aplicada ao trabalho de executivos e times comerciais. Nos dois, a decisão continua humana.</div>
                         </div>
-                        <a href="#apresentacao" class="btn btn-primary-fill btn-hero-primary">Conheça minha forma de ensinar</a>
-                        <a href="#produtos" class="btn btn-outline-full btn-hero-secondary">Ver caminhos de aprofundamento</a>
+                        <a href="#caminhos" class="btn btn-primary-fill btn-hero-primary">Escolha seu caminho</a>
+                        <a href="#apresentacao" class="btn btn-outline-full btn-hero-secondary">Conheça a Bruna</a>
                     </div>
                     <div class="hero-photo-frame">
-                        <img src="images/bruna-hero.webp" alt="Bruna Catarina">
+                        <img src="/images/bruna-hero.webp" alt="Bruna Catarina" width="280" height="420">
                     </div>
                 </div>
             </section>
         </div>
 
         <div class="container">
+            <section class="portas-section" id="caminhos">
+                <span id="produtos"></span>
+                <h2>Escolha seu caminho</h2>
+                <p class="portas-intro">Dois territórios, com públicos e caminhos próprios. Entre pela porta que corresponde ao seu momento.</p>
+
+                <div class="portas-grid">
+                    <article class="porta-card">
+                        <span class="porta-label">Porta 1 · Mercado Financeiro</span>
+                        <h3 class="porta-title">A Colmeia do Mercado</h3>
+                        <p class="porta-text">Educação para quem estuda, investe ou opera e quer decidir melhor: processo, risco, comportamento e evidência. Mercado é técnico. Decisão é humana.</p>
+                        <ul class="porta-lista" aria-label="O que você encontra">
+                            <li>Comunidade gratuita</li>
+                            <li>Cursos gravados</li>
+                            <li>VAR do Trade</li>
+                            <li>Júri Pós-Trade BeeC</li>
+                            <li>Mentoria Integrada BeeC</li>
+                        </ul>
+                        <a href="/mercado-financeiro" class="btn btn-primary-fill btn-arrow">Entrar na Colmeia do Mercado</a>
+                    </article>
+
+                    <article class="porta-card">
+                        <span class="porta-label">Porta 2 · IA para Executivos</span>
+                        <h3 class="porta-title">Produtividade com IA para executivos e times comerciais</h3>
+                        <p class="porta-text">IA aplicada ao trabalho real — processos, produtividade, decisões e capacitação — com contexto, estrutura e revisão humana. Sem hype de ferramenta.</p>
+                        <ul class="porta-lista" aria-label="Temas">
+                            <li>Processos</li>
+                            <li>Produtividade</li>
+                            <li>Decisão</li>
+                            <li>Capacitação de equipes</li>
+                        </ul>
+                        <a href="https://www.linkedin.com/in/bruna-catarina-82290938" class="btn btn-arrow" target="_blank" rel="noopener">Acompanhar no LinkedIn</a>
+                        <p class="porta-canal">A frente de IA para Executivos acontece no LinkedIn.</p>
+                    </article>
+                </div>
+            </section>
+
             <section class="about-section" id="apresentacao">
                 <div class="about-grid">
                     <div class="profile-photo">
-                        <img src="images/bruna-profile.webp" alt="Bruna Catarina">
+                        <img src="/images/bruna-profile.webp" alt="Bruna Catarina" width="180" height="270" loading="lazy">
                     </div>
                     <div class="about-content">
                         <h2>Prazer, eu sou Bruna Catarina.</h2>
-                        <span class="eyebrow">Mãe, educadora e estudante permanente do mercado financeiro.</span>
-                        <p>Minha trajetória reúne mais de 18 anos no ambiente corporativo, estudo contínuo e a prática de quem também vive a rotina do mercado. Estudo, opero e ensino o que vivo. Minha intenção não é dizer o que você deve fazer com o seu dinheiro, mas ajudá-lo a compreender melhor o mercado, suas ferramentas e seus riscos.</p>
+                        <span class="eyebrow">Mãe, educadora, mentora e fundadora da BCB Educacional.</span>
+                        <p>Foram 20 anos de carreira corporativa em vendas complexas para a alta liderança de multinacionais como HSBC, PayPal, Sodexo, Cielo e IBM. Hoje, estudo, opero e ensino o que vivo no mercado financeiro, e levo para executivos e equipes a aplicação prática de IA ao trabalho real.</p>
+                        <p>Minha intenção não é decidir por você, mas ajudar você a compreender melhor, organizar o processo e decidir com mais critério.</p>
                         <div class="quote">
                             "Não ensino para criar dependência. Ensino para ampliar compreensão, critério e autonomia."
                         </div>
@@ -790,90 +935,10 @@
                 </div>
             </section>
 
-            <section class="community-section">
-                <h2>Comunidade Colmeia</h2>
-                <p class="community-description">Um espaço gratuito para acompanhar estudos, reflexões e conteúdos sobre o mercado financeiro. Sem sala de sinais e sem promessa de resultado. Uma comunidade para quem valoriza aprendizado, troca e evolução consistente.</p>
-                <a href="https://t.me/+Lks6wL0rWGlmMzIx" class="btn btn-arrow">Entrar na Colmeia</a>
-            </section>
-
-            <section class="courses-section" id="produtos">
-                <h2>Para quem deseja aprofundar</h2>
-                <p class="courses-intro">Os cursos e a mentoria são caminhos de aprofundamento para quem deseja avançar com mais estrutura e autonomia — no momento em que isso fizer sentido.</p>
-
-                <div class="courses-grid">
-                    <div class="course-card">
-                        <span class="course-label">Curso Gravado</span>
-                        <h3 class="course-title">SETUP DA VOVÓZINHA CATARINA</h3>
-                        <p class="course-description">Um curso gravado e objetivo sobre uma técnica específica de leitura e execução, para quem busca mais critério, paciência e menos impulso diante do gráfico.</p>
-                        <div class="course-meta">
-                            <span class="course-meta-item">CERCA DE 3 HORAS • ACESSO IMEDIATO</span>
-                        </div>
-                        <a href="https://chk.eduzz.com/E9OOEA5G9B" class="btn btn-arrow">Ver detalhes e inscrição</a>
-                    </div>
-
-                    <div class="course-card">
-                        <span class="course-label">Curso Gravado</span>
-                        <h3 class="course-title">DAY TRADE DESDE A ABERTURA</h3>
-                        <p class="course-description">Um treinamento mais completo para compreender a abertura, organizar a leitura do mercado e desenvolver decisões mais estruturadas. Técnica, ferramenta, risco e execução — sem fórmula mágica.</p>
-                        <div class="course-meta">
-                            <span class="course-meta-item">MAIS DE 8 HORAS • ACESSO IMEDIATO</span>
-                        </div>
-                        <a href="https://chk.eduzz.com/39YDEZQQ9O" class="btn btn-arrow">Ver detalhes e inscrição</a>
-                    </div>
-
-                    <div class="course-card">
-                        <span class="course-label">Mentoria</span>
-                        <h3 class="course-title">MENTORIA INDIVIDUAL</h3>
-                        <p class="course-description">Um acompanhamento para organizar o estudo, revisar decisões e aprofundar leitura, processo e execução. Não é sala de sinais nem promessa de resultado.</p>
-                        <div class="course-meta">
-                            <span class="course-meta-item">SUJEITO À DISPONIBILIDADE</span>
-                        </div>
-                        <a href="https://forms.gle/s1CC8kd6XLBz6NaM9" class="btn btn-arrow">Entender como funciona</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="partners-section">
-                <div class="partners-hive ph-tl" aria-hidden="true">
-                    <svg viewBox="-60 -60 240 240"><g fill="none" stroke="#D2AD55" stroke-width="1.2">
-                        <polygon points="-15.0,-42.5 8.8,-28.8 8.8,-1.3 -15.0,12.5 -38.8,-1.3 -38.8,-28.8" opacity="0.5"/>
-                        <polygon points="11.0,2.5 34.8,16.2 34.8,43.8 11.0,57.5 -12.8,43.8 -12.8,16.2" opacity="0.4"/>
-                        <polygon points="37.0,-42.5 60.8,-28.8 60.8,-1.3 37.0,12.5 13.1,-1.3 13.1,-28.8" opacity="0.35"/>
-                    </g></svg>
-                </div>
-                <div class="partners-hive ph-br" aria-hidden="true">
-                    <svg viewBox="-60 -60 240 240"><g fill="none" stroke="#D2AD55" stroke-width="1.2">
-                        <polygon points="-15.0,-42.5 8.8,-28.8 8.8,-1.3 -15.0,12.5 -38.8,-1.3 -38.8,-28.8" opacity="0.5"/>
-                        <polygon points="11.0,2.5 34.8,16.2 34.8,43.8 11.0,57.5 -12.8,43.8 -12.8,16.2" opacity="0.4"/>
-                        <polygon points="37.0,-42.5 60.8,-28.8 60.8,-1.3 37.0,12.5 13.1,-1.3 13.1,-28.8" opacity="0.35"/>
-                    </g></svg>
-                </div>
-                <h2>Plataformas e parceiros</h2>
-                <p class="partners-intro">Minhas parcerias seguem um critério simples: só apresento ferramentas e instituições que conheço e nas quais acredito. Ainda assim, cada pessoa deve avaliar condições, riscos e adequação ao próprio perfil.</p>
-
-                <div class="partner-cards">
-                    <div class="partner-card partner-card-toro">
-                        <span class="logo-chip"><img src="images/toro-logo.webp" alt="Toro Investimentos, uma empresa Santander" class="partner-logo"></span>
-                        <h3 class="partner-title">Toro | Parceria oficial</h3>
-                        <p class="partner-text">Sou influenciadora parceira da Toro. Conheço sua estrutura e escolhi apresentar essa possibilidade porque acredito no que ela oferece. Se fizer sentido para o seu momento, conheça as condições e decida com consciência.</p>
-                        <a href="https://mkt.toroinvestimentos.com.br/influencer/bruna-catarina" class="btn btn-arrow" target="_blank">Conhecer a Toro</a>
-                        <p class="partner-note">Link de parceria comercial. Esta apresentação não constitui recomendação de investimento.</p>
-                    </div>
-
-                    <div class="partner-card partner-card-hfm">
-                        <img src="images/hfm-logo.webp" alt="HFM - HF Markets" class="partner-logo">
-                        <h3 class="partner-title">HFM | Plataforma internacional</h3>
-                        <p class="partner-text">Uma alternativa internacional para quem deseja conhecer outros mercados e já compreende os riscos envolvidos nesse tipo de operação.</p>
-                        <a href="https://www.hfm.com/int/?refid=30462492" class="btn btn-arrow" target="_blank">Conhecer a HFM</a>
-                        <p class="partner-note">Link de parceria comercial. Antes de decidir, conheça a plataforma, sua regulamentação, seus custos e os riscos envolvidos.</p>
-                    </div>
-                </div>
-            </section>
-
             <section class="cta-section">
                 <h2>Dúvidas?</h2>
-                <p>Se quiser entender qual caminho faz mais sentido para o seu momento, fale com a Colmeia.</p>
-                <a href="https://wa.me/5511975828778" class="btn btn-arrow">
+                <p>Se quiser entender qual caminho faz mais sentido para o seu momento, fale com a Bruna.</p>
+                <a href="https://wa.me/5511975828778" class="btn btn-arrow" target="_blank" rel="noopener">
                     <span>💬</span> Conversar pelo WhatsApp
                 </a>
             </section>
@@ -882,6 +947,7 @@
         <footer>
             <p class="footer-disclaimer">Todo o conteúdo deste site tem caráter exclusivamente educacional e não constitui recomendação de compra ou venda de ativos, oferta de investimento ou garantia de resultado. Operações no mercado financeiro envolvem riscos, inclusive a possibilidade de perda de capital. Cada pessoa é responsável por suas decisões e pelo próprio gerenciamento de risco. Resultados passados ou pessoais não garantem resultados futuros.</p>
             <p>&copy; 2026 Bruna Catarina BeeC. Todos os direitos reservados.</p>
+            <p class="footer-links"><a href="/mercado-financeiro">A Colmeia do Mercado</a> · <a href="https://www.linkedin.com/in/bruna-catarina-82290938" target="_blank" rel="noopener">LinkedIn</a> · <a href="/privacidade">Privacidade</a></p>
         </footer>
     </main>
 
@@ -890,6 +956,7 @@
         // Track button clicks
         document.querySelectorAll('.btn').forEach(button => {
             button.addEventListener('click', function() {
+                if (typeof gtag !== 'function') return;
                 const text = this.textContent.trim();
                 gtag('event', 'button_click', {
                     'button_text': text,
