@@ -313,7 +313,7 @@
             .profile-photo { width: 220px; margin: 0; }
             .frase-marca { font-size: 26px; }
             .caminhos-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
-            .plataformas-grid { grid-template-columns: 1fr 1fr; }
+            .plataformas-grid { grid-template-columns: minmax(0, 560px); }
         }
 
         @media (min-width: 1000px) {
@@ -414,8 +414,8 @@
                 </div>
 
                 <div class="plataformas" id="plataformas">
-                    <h3>Plataformas</h3>
-                    <p class="plataformas-intro">Plataformas que a Bruna conhece e apresenta com transparência. Antes de decidir, avalie condições, riscos e adequação ao seu perfil.</p>
+                    <h3>Plataforma</h3>
+                    <p class="plataformas-intro">Plataforma que a Bruna conhece e apresenta com transparência. Antes de decidir, avalie condições, riscos e adequação ao seu perfil.</p>
                     <div class="plataformas-grid">
                         <div class="plataforma">
                             <span class="logo-chip"><img src="/images/toro-logo.webp" alt="Toro Investimentos, uma empresa Santander" class="plataforma-logo"></span>
@@ -424,13 +424,8 @@
                             <a href="https://mkt.toroinvestimentos.com.br/influencer/bruna-catarina" class="link-caminho" target="_blank" rel="noopener">Conhecer a Toro</a>
                             <p class="nota">Link de parceria comercial. Esta apresentação não constitui recomendação de investimento.</p>
                         </div>
-                        <div class="plataforma">
-                            <img src="/images/hfm-logo.webp" alt="HFM - HF Markets" class="plataforma-logo">
-                            <p class="plataforma-titulo">HFM | Plataforma internacional</p>
-                            <p>Uma alternativa internacional para quem deseja conhecer outros mercados e já compreende os riscos envolvidos nesse tipo de operação.</p>
-                            <a href="https://www.hfm.com/int/?refid=30462492" class="link-caminho" target="_blank" rel="noopener">Conhecer a HFM</a>
-                            <p class="nota">Link de parceria comercial. Antes de decidir, conheça a plataforma, sua regulamentação, seus custos e os riscos envolvidos.</p>
-                        </div>
+                        <!-- HFM retirada da Colmeia em v0.8.0 por decisão da Bruna (05/10/2026). Referência preservada: asset /images/hfm-logo.webp
+                             e texto público anterior registrado no relatório de release; reavaliar em futura área institucional/parcerias. -->
                     </div>
                 </div>
             </div>
