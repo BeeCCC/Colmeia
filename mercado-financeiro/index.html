@@ -285,6 +285,27 @@
         .link-discreto:hover { color: var(--creme); }
         .voltar-caminhos { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(240, 223, 168, 0.2); font-size: 15px; }
 
+        /* v0.9 — Destaque Rocha ou Areia (1º bloco depois do hero: 2ª rolagem de quem chega do Instagram pelo celular) */
+        .destaque-roa { padding: 0 0 56px; background: var(--marinho); }
+        .roa-card { position: relative; border: 1px solid rgba(211, 156, 71, 0.55); border-top: 3px solid var(--dourado); border-radius: 14px; padding: 26px 22px 24px; background: var(--marinho-profundo); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); }
+        .roa-card .etiqueta { color: var(--dourado); margin-bottom: 12px; }
+        .roa-pergunta { font-family: var(--serif); font-weight: 500; font-size: 26px; line-height: 1.22; color: var(--creme); margin-bottom: 14px; }
+        .roa-produto { font-family: var(--sans); font-weight: 700; font-size: 16px; color: var(--dourado-claro); margin-bottom: 6px; }
+        .roa-texto { font-size: 16px; }
+        .roa-rodape { display: flex; flex-direction: column; gap: 14px; margin-top: 22px; }
+        .roa-preco { font-family: var(--mono); font-weight: 500; font-size: 22px; color: var(--creme); letter-spacing: 0.02em; }
+        .roa-preco small { font-size: 14px; color: var(--texto-sobre-escuro); }
+        .roa-nota { margin-top: 14px; font-size: 12px; opacity: 0.7; }
+
+        @media (min-width: 480px) {
+            .roa-rodape { flex-direction: row; align-items: center; justify-content: space-between; }
+        }
+        @media (min-width: 768px) {
+            .destaque-roa { padding: 0 0 96px; }
+            .roa-card { padding: 36px 40px 30px; }
+            .roa-pergunta { font-size: 32px; }
+        }
+
         @media (min-width: 480px) {
             .mentoria-cta .btn-primary-fill { width: auto; }
             .btn-primary-fill, .btn-outline-full, .cta-section .btn-primary-fill, .cta-botoes .btn { width: auto; }
@@ -355,6 +376,23 @@
                     <div class="hero-photo-frame">
                         <img src="/images/bruna-hero.webp" alt="Bruna Catarina" width="280" height="420">
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- v0.9 — Destaque comercial único: Rocha ou Areia (página de vendas e checkout ficam onde estão; só o link) -->
+        <section class="destaque-roa" id="rocha-ou-areia" aria-labelledby="roa-titulo">
+            <div class="container">
+                <div class="roa-card">
+                    <p class="etiqueta"><span class="ponto-luz" aria-hidden="true"></span>Novo · Diário Inteligente</p>
+                    <h2 class="roa-pergunta" id="roa-titulo">Seu trade deu lucro. Mas foi uma boa decisão?</h2>
+                    <p class="roa-produto">Rocha ou Areia — Diário de Trade Inteligente BeeC</p>
+                    <p class="roa-texto">Organize suas operações e acompanhe a execução do seu plano.</p>
+                    <div class="roa-rodape">
+                        <p class="roa-preco">R$ 47<small>/mês</small></p>
+                        <a href="https://claude.ai/artifact/Mi9ZU52qPdnx3eE5QKuzat" class="btn btn-primary-fill btn-arrow" target="_blank" rel="noopener">Conhecer o diário</a>
+                    </div>
+                    <p class="roa-nota">Ferramenta de registro e organização. Não é sinal nem recomendação de investimento.</p>
                 </div>
             </div>
         </section>
